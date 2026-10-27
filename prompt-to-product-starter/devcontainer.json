@@ -1,0 +1,25 @@
+{
+  "name": "From Prompt to Product",
+  "image": "mcr.microsoft.com/devcontainers/python:3.12",
+  "hostRequirements": {
+    "cpus": 2
+  },
+  "postCreateCommand": "pip install --user -r requirements.txt",
+  "customizations": {
+    "codespaces": {
+      "openFiles": ["START-HERE.md"]
+    },
+    "vscode": {
+      "extensions": [
+        "ms-python.python"
+      ],
+      "settings": {
+        "python.testing.pytestEnabled": true,
+        "python.testing.unittestEnabled": false,
+        "git.enableSmartCommit": true,
+        "git.confirmSync": false,
+        "files.autoSave": "afterDelay"
+      }
+    }
+  }
+}
